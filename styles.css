@@ -1,0 +1,149 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dhurjati&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    max-height: 80px;
+}
+.heading{
+    font-family: 'Caveat' ;
+    font-size: 2rem;
+    line-height: 7rem;
+    display: flex;
+    justify-content: center;
+    height : 7rem;
+    background-color: rgb(128, 228, 250);
+    color: black;
+}
+img{
+    height: 280px;
+    width: 220px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.choice{
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.choice:hover{
+    opacity: 0.5;
+    cursor:pointer;
+    border:2px solid black;
+}
+.scoreBoard{
+    display:inline-flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    gap: 5rem;
+    border: 2px dashed rgb(9, 5, 118);
+}
+#userScore,
+#compScore{
+    font-family: 'Silkscreen';
+    font-size: 3rem;
+}
+.msgContainer{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+#msg{
+    font-family: 'caveat';
+    background-color:  rgb(128, 228, 250);
+    color: #030202;
+    font-size: 2rem;
+    display: inline;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+.end{
+    margin-top: 20rem;
+    background-color: rgb(128, 228, 250);
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #060606;
+}
+p{
+    font-family: 'Silkscreen';
+}
+
+@media only screen and (max-width:775px){
+    body{
+        background-color: white;
+    }
+    .heading{
+        height: 20rem;
+        width: 100rem;
+        font-size:5rem;
+        line-height: 20rem;
+        padding: 3rem;
+        text-align: center;
+    }
+    .choices{
+        margin-left: 50rem;
+        margin-top: 20rem;
+    }
+    img{
+        height: 600px;
+        width: 400px;
+    }
+    .scoreBoard{
+        padding: 10rem;
+        margin-left: 30rem;
+        margin-top: 10rem;
+    }
+    .score{
+        font-size: 4rem;
+    }
+    #userscore{
+        font-size: 4rem;
+    }
+    #msg{
+        display: inline-block;
+        margin-left: 32rem;
+        margin-top: 5rem;
+        font-size: 10rem;
+    }
+    .end{
+        width: 106rem;
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .heading{
+    display: flex;
+    justify-content: center;
+    width: 75rem;
+    font-size:4rem;
+    line-height: 5rem;
+    padding-top: 5rem;
+    }
+    .choices{
+        margin-left: 40rem;
+    }
+    .scoreBoard{
+        margin-left: 20rem;
+    }
+    #msg{
+        display:inline-flex;
+        margin-left: 25rem;
+    }
+    .end{
+        width: 81rem;
+    }
+}
